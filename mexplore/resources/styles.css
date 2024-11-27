@@ -1,0 +1,936 @@
+@font-face {
+    font-family: 'CinaGEO';
+    src: url(./cina-geo/CinaGEOTest-Regular.otf) format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'CinaGEO';
+    src: url(./cina-geo/CinaGEOTest-Bold.otf) format('opentype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'CinaGEO';
+    src: url(./cina-geo/CinaGEOTest-Light.otf) format('opentype');
+}
+
+html, body {
+    font-family: 'CinaGEO', 'Poppins', sans serif;
+    font-size: 16px;
+}
+
+body>main {
+    margin: auto 2rem;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* Header Styling */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: 5rem;
+    align-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 3rem;
+    
+}
+
+nav .logo img{
+    width: 130px;
+}
+
+.menu-items ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.menu-items ul a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+.booking a {
+    background-color: #000;
+    border: 2px solid #000;
+    padding: .8rem 1.5rem;
+    border-radius: 1.5625rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    justify-content: center;
+    align-self: center;
+}
+
+.booking a:hover {
+    border: 2px solid #000;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+/* Main Global Styling */
+
+body>main {
+     margin-top: 5.9rem;
+}
+
+/* First banner section styling */
+
+.first-banner {
+    background-image: url('./img/mex-beach.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1.5rem;
+    height: 70vh;
+}
+
+.header-content {
+    margin: auto 5%;
+    padding: .2rem 0;
+}
+
+.first-banner h1 {
+    font-size: 3rem;
+    color: #fff;
+
+}
+
+.first-banner .text {
+    line-height: 3.5rem;
+}
+
+.header-content p {
+    color: #fff;
+    font-size: 2rem;
+}
+.first-banner .btn  {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.first-banner .btn a {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: .7rem 2rem;
+    border-radius: 1.5625rem;
+    cursor: pointer;
+
+}
+
+.first-banner .btn a:hover {
+    background-color: #000;
+    color: #fff;
+
+}
+
+.array {
+    display: flex;
+    gap: 1rem;
+}
+
+.array svg {
+    fill: #fff;
+    width: 25px;
+    height: 25px;
+    padding: 1rem;
+    background-color: #000;
+    border-radius: 50%;
+    margin-bottom: 4rem;
+}
+
+.array svg:hover {
+    background-color: #fff;
+    fill: #000;
+}
+
+.array-down {
+    display: flex;
+    flex-direction: column;
+    line-height: .1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.array-down svg {
+    fill: #fff;
+    width: 25px;
+    height: 25px;
+    padding: 0.4rem 2rem;
+    border: 1px solid #fff;
+    border-radius: 1.5625rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 4rem;
+    
+}
+
+.array-down svg:hover {
+    fill: #000;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid #000;
+}
+
+.array-down p span {
+    font-size: 1rem;
+}
+
+.arrays {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+.array p span {
+    font-size: 1rem;
+}
+
+
+/* Values section */
+
+.value-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.value-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0.1rem;
+}
+
+.values img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.value-img {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+
+}
+
+.values {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.value-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.value-item h5 {
+    margin-bottom: 0.5rem;
+    justify-content: center;
+}
+
+.value-item p {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Destinations Styling */
+
+.destinations .heading h1 {
+    margin: 2rem auto .5rem auto;
+}
+
+.destinations .heading p {
+    margin-top: 0;
+}
+
+.destinations .content {
+    display: flex;
+    justify-content: space-between;
+    gap: .9rem;
+    
+}
+
+.destinations .content img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.destination {
+    border: 2px solid #f4f4f4;
+    border-radius: 1.2rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.destination .content {
+    margin: auto 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.destination .content svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: .7rem;
+    background-color: #000;
+    fill: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.destination .content svg:hover {
+    background-color: #fff;
+    fill: #000;
+    border: 1px solid #000;
+}
+
+.destination .content .text h3 {
+    margin-bottom: 0.5rem;
+}
+
+.destination .content .text p {
+    margin-top: 0;
+}
+
+.destination .content .text p span {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.see-all {
+    text-align: center;
+    margin: 1.5rem auto 3rem auto;
+}
+
+.see-all a {
+    text-decoration: none;
+    color: black;
+    padding: .5rem 2rem;
+    border: 1px solid #000;
+    border-radius: 1.5625rem;
+}
+
+.see-all a:hover {
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Enjoy section banner */
+
+.enjoy {
+    background-image: url('./img/mex-plore.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40rem;
+    border-radius: 1.5rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.enjoy .heading {
+    color: #fff;
+    padding: 2rem
+}
+
+.enjoy .heading h1{
+    margin-bottom: .5rem;
+    font-size: 3rem;
+
+}
+
+.enjoy .heading p {
+    margin-top: 0;
+    justify-content: flex-start;
+}
+
+.enjoy .shape {
+    margin: 4rem;
+    padding: 1rem 1rem;
+    border: 1px solid #fff;
+    border-radius: 1.5rem;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr)
+}
+
+.enjoy .shape .text-item {
+    color: #fff;
+    justify-content: flex-start;
+    padding: .5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+}
+
+.text-item span {
+    font-size: .7rem;
+    line-height: .4rem;
+}
+
+.blog-container .heading {
+    margin: 3rem auto 2rem auto;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+
+
+}
+
+.blog-container .heading .title {
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.blog-container .heading .description {
+    width: 50%;
+}
+
+.description a {
+    text-decoration: none;
+    color: #000;
+    padding: 1rem;
+    border: 1px solid #000;
+    border-radius: 1.5625rem;
+    cursor: pointer;
+}
+
+.description a:hover {
+   background-color: #000;
+   color: #fff; 
+}
+
+.description p {
+    margin-bottom: 2rem;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto; /* Auto height rows */
+    gap: 1rem; 
+    width: 100%;
+    margin: auto;
+}
+
+.blog-1 {
+    grid-column: 1 / 2; /* Spans the first column */
+    grid-row: 1 / 3; /* Spans two rows */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-2 {
+    grid-column: 2 / 3; /* Placed in the second column */
+    grid-row: 1 / 2; /* First row of the second column */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-3 {
+    grid-column: 2 / 3; /* Placed in the second column */
+    grid-row: 2 / 3; /* Second row of the second column */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-1 img, .blog-2 img, .blog-3 img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure no distortion */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Last Banner */
+
+.last-banner {
+    background-image: url('./img/mex-sunset.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30rem;
+    margin: 3rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+}
+
+.last-banner .text-item {
+    color: #fff;
+    text-align: center;
+}
+
+.text-item h1 {
+    font-size: 3rem;
+}
+
+.text-item a {
+    color: #fff;
+    text-decoration: none;
+    padding: .7rem 2rem;
+    border: 1px solid #fff;
+    border-radius: 1.5625rem;
+}
+
+.text-item a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+
+
+/* Footer Styling */
+
+footer {
+    margin: auto 2rem 2rem 2rem;
+    background-color: #f4f4f4;
+    border-radius: 1.5rem;
+}
+
+.f-container {
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    width: 50%;
+}
+
+footer nav ul {
+    list-style: none;
+}
+
+footer nav ul li {
+    line-height: 2rem;
+}
+footer nav ul li a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    
+}
+
+footer nav ul li a:hover {
+    color: gray;
+}
+
+footer .logo img {
+    width: 100px;
+}
+
+.f-menu p {
+    font-weight: bold;
+}
+
+
+/* Copyright & Social */
+
+.copyright-social {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: center;
+    padding: 2rem;
+    border-top: 1px solid gray;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem
+}
+
+.social a svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.social a svg:hover {
+    fill: gray;
+}
+
+.copyright p {
+    color: gray;
+}
+
+
+
+.blogs {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem; /* Adjust for spacing between items */
+    
+  }
+  
+  .blog-1 {
+    grid-column: 1; 
+    grid-row: span 2; 
+    background-color: #fff;
+    
+  }
+  
+  .blog-2,
+  .blog-3 {
+    grid-column: 2; /* Second column */
+    background-color: #fff; 
+  }
+  
+  .blog img {
+    width: 100%;
+    height: auto;   
+  }
+
+  .blog .text {
+    margin: 1rem;
+    
+  }
+
+  .text .tag {
+    display: flex;
+    margin-top: -1rem;
+    gap: 1rem;
+  }
+
+  .text .tag p {
+    padding: .5rem 1rem;
+    background-color: #f4f4f4;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  
+ 
+
+
+/* Responsivity */
+
+
+
+@media only screen and (max-width: 1024px) {
+    .first-banner h1 {
+        font-size: 2rem;
+    }
+
+
+    .first-banner .text {
+        line-height: 1rem;
+    }
+
+    .header-content p {
+        font-size: 1.5rem;
+    }
+
+    .first-banner .btn  {
+        margin-top: 3rem;
+        margin-bottom: 7rem;
+    }
+
+    footer nav {
+        width: 70%;
+        gap: 1rem
+
+    }
+
+    .text .tag p {
+        gap: .2rem;
+        font-size: .7rem;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .first-banner {
+        height: 60vh;
+    }
+
+    .header-content {
+        padding-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+
+    .first-banner .text {
+        line-height: 2.5rem;
+    }
+
+    .first-banner {
+        height: 70vh;
+    }
+
+   
+
+    .destinations .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .destination .content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .enjoy {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: flex-start;
+    }
+
+    .text .tag p {
+
+        gap: .2rem;
+        font-size: 1rem;
+    }
+
+    .first-banner .btn  {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .menu-items, .booking {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 15px;
+        cursor: pointer;
+        
+    }
+
+    .short {
+        width: 20px;
+        align-self: end;
+    }
+
+    .hamburger-menu span {
+        display: block;
+        height: 1.5px;
+        background-color: black; /* Change to any desired color */
+        border-radius: 2px;
+    }
+
+    .blogs {
+        grid-template-columns: 1fr; /* Single column for tablet */
+        grid-template-rows: auto; /* Adjust rows automatically */
+      }
+    
+      .blog-1 {
+        grid-column: auto;
+        grid-row: auto; /* Reset column and row spans */
+      }
+    
+      .blog-2,
+      .blog-3 {
+        grid-column: auto;
+        grid-row: auto; /* Reset column and row spans */
+      }
+
+      .f-container {
+        display: grid;
+
+      }
+
+      .f-container nav {
+        margin: auto;
+        padding: auto;
+        display: flex;
+        gap: 4rem;
+        justify-content: space-between;
+        width: 100%;
+ 
+      }
+
+
+
+}
+
+@media only screen and (max-width: 575.98px) {
+
+    .first-banner .btn  {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .value-heading p {
+        line-height: normal;
+    }
+
+    .array-down {
+        display: none;
+    }
+
+    .first-banner {
+        height: 60vh;
+    }
+
+    .first-banner h1 {
+        font-size: 1.7rem;
+    }
+
+    .value-container {
+        gap: 1rem;
+    }
+
+    .value-container .values {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .values {
+        gap: .5rem;
+    }
+
+    .values .value-item {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .center {
+        align-items: flex-start;
+    }
+
+    .value-item p {
+        margin-top: -1rem;
+        text-align: justify;
+    }
+
+    .value-heading {
+        align-items: flex-start;
+    }
+
+    .destinations .content {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .destination .content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .blog-container .heading {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-container .heading .title {
+        font-size: 1rem;
+        width: 100%;
+        margin-bottom: -3rem;
+    }
+
+    .blog-container .heading .description {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .blogs {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto; 
+      gap: 15px; 
+    }
+  
+    .blog {
+      margin: 0 auto;
+    }
+  
+    .blog img {
+      width: 100%; 
+    }
+
+   footer nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+
+    .f-menu {
+        margin: -2rem 0
+    }
+
+
+    .copyright-social {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: .7rem;
+    }
+
+
+  }
